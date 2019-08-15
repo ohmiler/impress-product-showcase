@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ImpressJS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- 
+
+        Using Impress.JS
+
+        data-x, data-y, data-z will move the slide on the screen in 3D space;
+        data-rotate, data-rotate-x, data-rotate-y rotate the element around the specified axis (in deg›rees);
+        data-scale - enlarges or shrinks the slide.
+
+     -->
+
+
+    <div id="impress" class="impress-not-supported">
+
+        <div id="intro" class="step" data-x="0" data-y="0">
+            <h2>Intruducing Galaxy Nexus</h2>
+            <p>
+                Android 4.0 <br>
+                Super Amoled 720p Screen <br>
+                1.2 Ghz Dual Core CPU <br>
+                32 GB of storage <br>
+                Fast Camera 
+            </p>
+            <img src="img/nexus_1.jpg" width="232" height="458" alt="Galaxy Nexus">
+        </div>
+
+        <div id="simplicity" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+            <h2>Simplicity in Android 4.0</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi quo odio officiis qui officia deleniti similique perferendis enim asperiores, hic veritatis consectetur eaque exercitationem ducimus nobis distinctio harum eligendi.
+            </p>
+            <img src="img/nexus_2.jpg" width="289" height="535" alt="Galaxy Nexus">
+        </div>
+
+        <div id="connect" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+            <h2>Connect &amp; Share</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi voluptatibus earum, magni similique et.</p>
+            <img src="img/nexus_3.jpg" alt="">
+        </div>
+
+        <div id="upload" class="step" data-x="-200" data-y="1500" data-rotate="180">
+            <h2>Instant Upload</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, commodi.</p>
+            <img src="img/nexus_4.jpg" alt="">
+        </div>
+
+        <div id="music" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+            <h2>Jam on with Google Music</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia maxime dignissimos repellat culpa fugiat et unde, consequatur incidunt eum at.</p>
+            <img src="img/nexus_5.jpg" alt="">
+        </div>
+    </div>
+
+    <a id="arrowLeft" class="arrow">&lt;</a>
+    <a id="arrowRight" class="arrow">&gt;</a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="impress.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
